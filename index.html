@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.remove('no-js');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ankush Singha — Web Developer &amp; Visual Designer</title>
+<meta name="description" content="Ankush Singha — frontend developer and visual designer. Websites, YouTube thumbnails and posters. Co-founder, Canvas &amp; Code.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__mark">AS<span class="nav__mark-dot">.</span></a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#work"><span>01</span>Work</a>
+      <a href="#about"><span>02</span>About</a>
+      <a href="#studio"><span>03</span>Studio</a>
+      <a href="#contact"><span>04</span>Contact</a>
+    </nav>
+
+    <a href="#contact" class="nav__cta">Start a project</a>
+
+    <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <nav aria-label="Mobile">
+    <a href="#work"><em>01</em>Work</a>
+    <a href="#about"><em>02</em>About</a>
+    <a href="#studio"><em>03</em>Studio</a>
+    <a href="#contact"><em>04</em>Contact</a>
+  </nav>
+  <div class="mobile-menu__foot">
+    <a href="mailto:ankushsingha777@gmail.com">ankushsingha777@gmail.com</a>
+    <a href="https://github.com/singhaankush?tab=repositories" target="_blank" rel="noopener">GitHub ↗</a>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="hero">
+    <div class="hero__grid">
+
+      <div class="hero__type">
+        <p class="hero__kicker" data-reveal>Frontend developer — visual designer</p>
+
+        <h1 class="hero__title">
+          <span class="line"><span>Ankush</span></span>
+          <span class="line"><span>Singha<span class="hero__title-dot">.</span></span></span>
+        </h1>
+
+        <p class="hero__desc" data-reveal>
+          I build fast, animated websites and design the posters and thumbnails
+          that get them clicked on. Co-founder at
+          <a href="#studio" class="hero__desc-link">Canvas&nbsp;&amp;&nbsp;Code</a>.
+        </p>
+
+        <div class="hero__actions" data-reveal>
+          <a href="#work" class="btn btn--primary">See the work</a>
+          <a href="https://github.com/singhaankush?tab=repositories" target="_blank" rel="noopener" class="btn btn--ghost">
+            GitHub
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__portrait" id="heroPortrait">
+        <img src="assets/pfp.webp" alt="Portrait of Ankush Singha" class="hero__portrait-img" id="heroImg">
+      </div>
+    </div>
+
+    <div class="hero__marquee" aria-hidden="true">
+      <div class="hero__marquee-track">
+        <span>Websites</span><span class="hero__marquee-dot">✻</span>
+        <span>Poster design</span><span class="hero__marquee-dot">✻</span>
+        <span>YouTube thumbnails</span><span class="hero__marquee-dot">✻</span>
+        <span>Banner design</span><span class="hero__marquee-dot">✻</span>
+        <span>GSAP animation</span><span class="hero__marquee-dot">✻</span>
+        <span>Websites</span><span class="hero__marquee-dot">✻</span>
+        <span>Poster design</span><span class="hero__marquee-dot">✻</span>
+        <span>YouTube thumbnails</span><span class="hero__marquee-dot">✻</span>
+        <span>Banner design</span><span class="hero__marquee-dot">✻</span>
+        <span>GSAP animation</span><span class="hero__marquee-dot">✻</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WORK ================= -->
+  <section class="work" id="work">
+    <div class="section-head">
+      <p class="section-head__kicker" data-reveal>Selected work</p>
+      <h2 class="section-head__title">
+        Things I've<br><em>designed &amp; built.</em>
+      </h2>
+    </div>
+
+    <div class="work__filters" data-reveal role="tablist" aria-label="Filter work">
+      <button class="work__filter is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+      <button class="work__filter" data-filter="site" role="tab" aria-selected="false">Websites</button>
+      <button class="work__filter" data-filter="thumb" role="tab" aria-selected="false">Thumbnails</button>
+      <button class="work__filter" data-filter="poster" role="tab" aria-selected="false">Posters</button>
+    </div>
+
+    <div class="work__list" id="workList">
+
+      <!-- 1 -->
+      <article class="work-item" data-category="site" data-index="01">
+        <a href="https://our-own-website.vercel.app/" target="_blank" rel="noopener" class="work-item__link">
+          <div class="work-item__row">
+            <span class="work-item__num">01</span>
+            <div class="work-item__title-wrap">
+              <h3 class="work-item__title">Canvas &amp; Code</h3>
+              <p class="work-item__meta">Studio site · HTML / CSS / JS / GSAP</p>
+            </div>
+            <span class="work-item__tags">
+              <span>Website</span><span>GSAP</span><span>EmailJS</span>
+            </span>
+            <span class="work-item__arrow" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+          <div class="work-item__preview" aria-hidden="true">
+            <div class="browser-mock">
+              <div class="browser-mock__bar">
+                <span></span><span></span><span></span>
+                <div class="browser-mock__url">our-own-website.vercel.app</div>
+              </div>
+              <div class="browser-mock__body browser-mock__body--cc">
+                <!-- <p class="browser-mock__placeholder">Live site preview<br><small>Swap in a real screenshot — see README</small></p> -->
+                 <img src="assets/candc.png" alt="Canvas and Code studio website homepage, featuring a purple-and-gold gradient background with a laptop mockup and the headline 'Websites, Posters, Banners'">
+              </div>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- 2 -->
+      <article class="work-item" data-category="site" data-index="02">
+        <a href="https://doubtsolverai26.netlify.app/login" target="_blank" rel="noopener" class="work-item__link">
+          <div class="work-item__row">
+            <span class="work-item__num">02</span>
+            <div class="work-item__title-wrap">
+              <h3 class="work-item__title">DoubtSolve AI</h3>
+              <p class="work-item__meta">Study platform · Curated videos &amp; notes</p>
+            </div>
+            <span class="work-item__tags">
+              <span>Website</span><span>Auth</span><span>EdTech</span>
+            </span>
+            <span class="work-item__arrow" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+          <div class="work-item__preview" aria-hidden="true">
+            <div class="browser-mock">
+              <div class="browser-mock__bar">
+                <span></span><span></span><span></span>
+                <div class="browser-mock__url">doubtsolverai26.netlify.app</div>
+              </div>
+              <div class="browser-mock__body browser-mock__body--ds">
+                <img src="assets/DSAi.png" alt="DoubtSolve AI website preview, featuring a login page with a purple gradient background and a login form in the center">
+              </div>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- 3 -->
+      <article class="work-item" data-category="site" data-index="03">
+        <a href="https://seedskraft.vercel.app/" target="_blank" rel="noopener" class="work-item__link">
+          <div class="work-item__row">
+            <span class="work-item__num">03</span>
+            <div class="work-item__title-wrap">
+              <h3 class="work-item__title">Seedskraft</h3>
+              <p class="work-item__meta">Product site</p>
+            </div>
+            <span class="work-item__tags">
+              <span>Website</span><span>Frontend</span>
+            </span>
+            <span class="work-item__arrow" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+          <div class="work-item__preview" aria-hidden="true">
+            <div class="browser-mock">
+              <div class="browser-mock__bar">
+                <span></span><span></span><span></span>
+                <div class="browser-mock__url">seedskraft.vercel.app</div>
+              </div>
+              <div class="browser-mock__body browser-mock__body--sk">
+                <img src="assets/SK.png" alt="Seedskraft website preview, featuring a modern design with a green and white color scheme and a call-to-action button">
+              </div>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- 4 - thumbnail -->
+      <article class="work-item" data-category="thumb" data-index="04">
+        <div class="work-item__link">
+          <div class="work-item__row">
+            <span class="work-item__num">04</span>
+            <div class="work-item__title-wrap">
+              <h3 class="work-item__title">Prevent Football Injuries</h3>
+              <p class="work-item__meta">YouTube thumbnail · Sports channel</p>
+            </div>
+            <span class="work-item__tags">
+              <span>Thumbnail</span><span>High-CTR</span>
+            </span>
+            <span class="work-item__arrow work-item__arrow--expand" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M8 3V13M3 8H13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            </span>
+          </div>
+          <div class="work-item__preview">
+            <img src="assets/project-football.webp" alt="YouTube thumbnail design: Prevent Football Injuries, featuring Ronaldo and Neymar cutouts on a fire-themed background" loading="lazy">
+          </div>
+        </div>
+      </article>
+
+      <!-- 5 - thumbnail -->
+      <article class="work-item" data-category="thumb" data-index="05">
+        <div class="work-item__link">
+          <div class="work-item__row">
+            <span class="work-item__num">05</span>
+            <div class="work-item__title-wrap">
+              <h3 class="work-item__title">Chicken Honey Wings</h3>
+              <p class="work-item__meta">YouTube thumbnail · Bengali cooking channel</p>
+            </div>
+            <span class="work-item__tags">
+              <span>Thumbnail</span><span>Bilingual</span>
+            </span>
+            <span class="work-item__arrow work-item__arrow--expand" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M8 3V13M3 8H13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            </span>
+          </div>
+          <div class="work-item__preview">
+            <img src="assets/project-bengali.webp" alt="Bengali-language YouTube thumbnail for a home cooking channel — Chicken Honey Wings recipe, with an ornamental purple frame" loading="lazy">
+          </div>
+        </div>
+      </article>
+
+      <!-- 6 - poster -->
+      <article class="work-item" data-category="poster" data-index="06">
+        <div class="work-item__link">
+          <div class="work-item__row">
+            <span class="work-item__num">06</span>
+            <div class="work-item__title-wrap">
+              <h3 class="work-item__title">Studio Promo — Light</h3>
+              <p class="work-item__meta">Poster · Canvas &amp; Code identity</p>
+            </div>
+            <span class="work-item__tags">
+              <span>Poster</span><span>Brand system</span>
+            </span>
+            <span class="work-item__arrow work-item__arrow--expand" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M8 3V13M3 8H13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            </span>
+          </div>
+          <div class="work-item__preview">
+            <img src="assets/poster-light.webp" alt="Canvas and Code promotional poster, light theme — Websites, Posters, Banners headline with laptop mockup and purple-gold accents" loading="lazy" style="width:100%; height:100%; object-fit:contain; display:block;">
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="about" id="about">
+    <div class="about__grid">
+      <div class="about__label" data-reveal>
+        <p class="section-head__kicker">About</p>
+      </div>
+
+      <div class="about__body">
+        <p class="about__lead" data-reveal>
+          I sit at the point where <em>design</em> and <em>code</em> stop being
+          two different jobs. I build the interface and I design what gets people
+          to click on it in the first place — the site, the thumbnail, the poster,
+          the banner.
+        </p>
+
+        <p class="about__text" data-reveal>
+          On the build side that means HTML, CSS and JavaScript, animated with
+          GSAP, wired up with tools like EmailJS when a project needs a working
+          contact form without a backend. On the design side it means posters,
+          banners and YouTube / Facebook thumbnails built to be understood — and
+          clicked — in about three seconds.
+        </p>
+
+        <div class="about__facts" data-reveal>
+          <div class="about__fact">
+            <p class="about__fact-num">2</p>
+            <p class="about__fact-label">Disciplines,<br>one person</p>
+          </div>
+          <div class="about__fact">
+            <p class="about__fact-num">4</p>
+            <p class="about__fact-label">Formats —<br>site, poster, banner, thumb</p>
+          </div>
+          <div class="about__fact">
+            <p class="about__fact-num">1</p>
+            <p class="about__fact-label">Studio<br>co-founded</p>
+          </div>
+        </div>
+
+        <div class="about__stack" data-reveal>
+          <p class="about__stack-label">Tools I build with</p>
+          <ul class="about__stack-list">
+            <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+            <li>GSAP</li><li>Framer Motion</li><li>EmailJS</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STUDIO ================= -->
+  <section class="studio" id="studio">
+    <div class="studio__inner">
+      <div class="studio__copy">
+        <p class="section-head__kicker" data-reveal>Co-founder</p>
+        <h2 class="studio__title">Canvas <span>&amp;</span> Code</h2>
+        <p class="studio__desc" data-reveal>
+          A two-person creative studio I co-founded — websites, posters, banners
+          and thumbnails for brands who'd rather stand out than blend in. One of
+          us thinks in grids and gradients. The other thinks in components and
+          motion curves. Every project runs through both.
+        </p>
+        <a href="https://our-own-website.vercel.app/" target="_blank" rel="noopener" class="btn btn--primary btn--on-dark">
+          Visit the studio
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <div class="studio__visual" data-reveal>
+        <!-- <div class="studio__mark">
+          <span class="studio__mark-c">C</span>
+          <span class="studio__mark-and">&amp;</span>
+          <span class="studio__mark-code">&lt;/&gt;</span>
+        </div>
+        <p class="studio__mark-caption">Design it. Code it. Brand it.</p> -->
+        <img src="assets/poster-light.webp" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="contact" id="contact">
+    <div class="contact__inner">
+      <p class="section-head__kicker" data-reveal>Get in touch</p>
+      <h2 class="contact__title">
+        Got a project<br><em>in mind?</em>
+      </h2>
+      <p class="contact__desc" data-reveal>
+        Tell me what you need — a website, a poster, a banner, a thumbnail
+        that finally gets the click.
+      </p>
+
+      <div class="contact__grid">
+        <form class="contact__form" id="contactForm" data-reveal novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <span class="field__error">Please enter your name</span>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <span class="field__error">Please enter a valid email</span>
+          </div>
+          <div class="field">
+            <label for="message">Project details</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <span class="field__error">Please add a short message</span>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+            <span class="btn__label">Send message</span>
+          </button>
+          <p class="contact__form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="contact__side" data-reveal>
+          <a href="mailto:ankushsingha777@gmail.com" class="contact__direct">
+            <span class="contact__direct-label">Email</span>
+            <span class="contact__direct-value">ankushsingha777@gmail.com</span>
+          </a>
+          <a href="tel:+916297835193" class="contact__direct">
+            <span class="contact__direct-label">Phone</span>
+            <span class="contact__direct-value">+91 62978&nbsp;35193</span>
+          </a>
+          <a href="https://github.com/singhaankush?tab=repositories" target="_blank" rel="noopener" class="contact__direct">
+            <span class="contact__direct-label">GitHub</span>
+            <span class="contact__direct-value">github.com/singhaankush</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer__inner">
+    <a href="#top" class="footer__mark">Ankush Singha</a>
+    <p class="footer__line">Frontend developer &amp; visual designer · Co-founder, Canvas &amp; Code</p>
+    <div class="footer__links">
+      <a href="mailto:ankushsingha777@gmail.com">Email</a>
+      <a href="https://github.com/singhaankush?tab=repositories" target="_blank" rel="noopener">GitHub</a>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
